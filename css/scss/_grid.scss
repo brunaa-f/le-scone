@@ -26,15 +26,6 @@ $s-device: 480px;
     }
 }
 
-p {
-    color: blue;
-    @include d(m){
-        color: pink;
-    }
-    @include d(s) {
-        color: aqua;
-    }
-}
 
 @function grid($col, $offset: false) {
     $width: $col / $cols * 100 + "%";
@@ -55,7 +46,7 @@ p {
 @mixin grid-structure {
     float: left;
     min-height: 1px;
-    margin-left: $gutter/2;
+    margin-left: $gutter /2;
     margin-right: $gutter / 2;
     @include d(s){
         width: 100%;
@@ -112,8 +103,8 @@ p {
 
 @mixin row {
     position: relative;
-    margin-left: -$gutter/2;
-    margin-right: -$gutter/2;
+    margin-left: -$gutter /2;
+    margin-right: -$gutter /2;
     @include d(s) {
         margin-left: 0px;
         margin-right: 0px;
